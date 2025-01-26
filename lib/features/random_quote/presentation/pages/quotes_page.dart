@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:random_clean/features/favorite_quote/presentation/pages/favorite_quote.dart';
+import '../../../../config/routes/app_routes.dart';
 import '../../../../core/utils/assets.dart';
 
 class QuotesPage extends StatelessWidget {
@@ -12,13 +13,9 @@ class QuotesPage extends StatelessWidget {
         // ! anonymous navigation
         child: InkWell(
           onTap: () {
-            Navigator.push(
+            Navigator.pushNamed(
               context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return const FavoriteQuote();
-                },
-              ),
+              Routes.favoriteQoute,
             );
           },
           child: Image.asset(
