@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:random_clean/core/utils/app_strings.dart';
-import 'package:random_clean/core/utils/assets.dart';
+import 'package:random_clean/features/random_quote/presentation/pages/quotes_page.dart';
 import 'config/themes/app_theme.dart';
 
 class QuoteApp extends StatelessWidget {
@@ -13,10 +13,7 @@ class QuoteApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       //! theme: ThemeData(primaryColor: HexColor('#032254')),
       theme: appTheme(),
-      home: Scaffold(
-          body: Image.asset(
-        Assets.imagesQuote,
-      )),
+      home: const QuotesPage(),
     );
   }
 }
