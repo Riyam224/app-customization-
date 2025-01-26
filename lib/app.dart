@@ -15,7 +15,7 @@ class QuoteApp extends StatelessWidget {
       //! theme: ThemeData(primaryColor: HexColor('#032254')),
       theme: appTheme(),
       // home: const QuotesPage(),
-      routes: routes,
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }

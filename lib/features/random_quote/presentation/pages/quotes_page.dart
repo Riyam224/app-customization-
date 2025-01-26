@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:random_clean/features/favorite_quote/presentation/pages/favorite_quote.dart';
-import '../../../../config/routes/app_routes.dart';
 import '../../../../core/utils/assets.dart';
 
 class QuotesPage extends StatelessWidget {
   const QuotesPage({super.key});
 
+  static const String routeName = '/quotes';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +14,7 @@ class QuotesPage extends StatelessWidget {
           onTap: () {
             Navigator.pushNamed(
               context,
-              Routes.favoriteQoute,
+              '/favoriteQoute',
             );
           },
           child: Image.asset(
