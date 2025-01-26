@@ -63,10 +63,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Tajawal-Black
+    - family: Tajawal
       fonts:
         - asset: assets/font/Tajawal-Black.ttf
-          style: 900
+          weight: 900  # Black (900 is the correct weight for Black)
         - asset: assets/font/Tajawal-ExtraLight.ttf
           weight: 200  # Extra Light
         - asset: assets/font/Tajawal-Light.ttf
