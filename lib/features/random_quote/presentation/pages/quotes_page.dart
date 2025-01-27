@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/utils/assets.dart';
+import '../../../../core/utils/constants.dart';
 
 class QuotesPage extends StatelessWidget {
   const QuotesPage({super.key});
@@ -12,10 +13,7 @@ class QuotesPage extends StatelessWidget {
         // ! anonymous navigation
         child: InkWell(
           onTap: () {
-            Navigator.pushNamed(
-              context,
-              '/favoriteQoute',
-            );
+            Constants.showErrorDialog(context: context, msg: 'error');
           },
           child: Image.asset(
             Assets.imagesQuote,
