@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:random_clean/core/utils/app_strings.dart';
 import 'package:random_clean/core/utils/media_query_values.dart';
 import '../../../../core/utils/assets.dart';
 import '../../../../core/utils/constants.dart';
@@ -7,22 +8,20 @@ class QuotesPage extends StatelessWidget {
   const QuotesPage({super.key});
 
   static const String routeName = '/quotes';
+
+  // todo
+  Widget _buildBodyContent() {
+    return const Column();
+  }
+
   @override
   Widget build(BuildContext context) {
+    final appBar = AppBar(
+      title: const Text(AppStrings.appName),
+    );
     return Scaffold(
-      body: Center(
-        // ! anonymous navigation
-        child: InkWell(
-          onTap: () {
-            Constants.showToast(message: 'Random Quote');
-          },
-          child: Image.asset(
-            Assets.imagesQuote,
-            // todo media query
-            width: context.width,
-          ),
-        ),
-      ),
+      appBar: appBar,
+      body: _buildBodyContent(),
     );
   }
 }

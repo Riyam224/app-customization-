@@ -9,6 +9,15 @@ ThemeData appTheme() {
     brightness: Brightness.dark,
     scaffoldBackgroundColor: Colors.white,
     fontFamily: AppStrings.fontfamily,
+    appBarTheme: const AppBarTheme(
+        centerTitle: true,
+        color: Colors.transparent,
+        elevation: 0,
+        titleTextStyle: TextStyle(
+          color: Colors.black,
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+        )),
     textTheme: const TextTheme(
       bodyMedium: TextStyle(
         height: 1.3,
