@@ -9,21 +9,26 @@ ThemeData appTheme() {
     brightness: Brightness.dark,
     scaffoldBackgroundColor: Colors.white,
     fontFamily: AppStrings.fontfamily,
-    appBarTheme: const AppBarTheme(
+    appBarTheme: AppBarTheme(
         centerTitle: true,
-        color: Colors.transparent,
-        elevation: 0,
-        titleTextStyle: TextStyle(
-          color: Colors.black,
+        color: AppColors.primaryColor,
+        // elevation: 0,
+        titleTextStyle: const TextStyle(
+          color: Colors.white,
           fontSize: 20,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w500,
         )),
+    // TODO
     textTheme: const TextTheme(
       bodyMedium: TextStyle(
-        height: 1.3,
-        fontSize: 16.0,
-        color: Colors.black87,
-        fontWeight: FontWeight.w500,
+        height: 1.2,
+        color: Colors.white,
+        fontSize: 22,
+      ),
+      bodySmall: TextStyle(
+        fontWeight: FontWeight.bold,
+        color: Colors.white,
+        fontSize: 16,
       ),
     ),
   );
