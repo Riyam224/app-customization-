@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:random_clean/core/utils/app_colors.dart';
 import 'package:random_clean/core/utils/app_strings.dart';
 import 'package:random_clean/core/utils/media_query_values.dart';
 import 'package:random_clean/features/random_quote/presentation/widgets/quote_content.dart';
@@ -12,9 +13,21 @@ class QuotesPage extends StatelessWidget {
 
   // todo
   Widget _buildBodyContent() {
-    return const Column(
+    return Column(
       children: [
         QuoteContent(),
+        Container(
+            padding: const EdgeInsets.symmetric(vertical: 20),
+            margin: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.primaryColor,
+            ),
+            child: const Icon(
+              Icons.refresh,
+              size: 50,
+              color: Colors.white,
+            ))
       ],
     );
   }
